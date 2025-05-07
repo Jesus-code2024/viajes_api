@@ -14,6 +14,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api-token-auth/', obtain_auth_token),  # Endpoint para obtener tokens
-
     path('api-auth/', include('rest_framework.urls')),  # Para login en DRF
 ]
